@@ -2,6 +2,9 @@
 
 > Hacker Rank Problems solved in GoLang :)
 
+[![Go/Test](https://github.com/gugacavalieri/hacker-rank-go/actions/workflows/go-test.yaml/badge.svg)](https://github.com/gugacavalieri/hacker-rank-go/actions/workflows/go-test.yaml)
+[![Go/Lint](https://github.com/gugacavalieri/hacker-rank-go/actions/workflows/go-lint.yaml/badge.svg)](https://github.com/gugacavalieri/hacker-rank-go/actions/workflows/go-lint.yaml)
+
 
 # Required Tools
 
