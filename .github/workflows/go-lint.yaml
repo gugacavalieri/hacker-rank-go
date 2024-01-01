@@ -1,0 +1,15 @@
+name: Go/Lint
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:      
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Revive Action by pulling pre-built image
+        uses: docker://morphy/revive-action:v2
