@@ -16,7 +16,7 @@ https://go.dev/doc/install
 go install github.com/mgechev/revive@latest
 ```
 
-# Getting Started (MacOS)
+# Getting Started
 
 ```bash
 # Running Tests (All Challenges)
