@@ -26,6 +26,6 @@ go test ./...
 revive ./...
 ```
 
-# Future Improvemente
+# Future Improvements
 
 * [ ] Add Dockerfile and Compose to facilitate testing
