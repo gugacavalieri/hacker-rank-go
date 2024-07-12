@@ -8,24 +8,18 @@
 
 # Required Tools
 
-```bash
-# install GoLang
-https://go.dev/doc/install
-
-# install revive linter 
-go install github.com/mgechev/revive@latest
-```
+* Docker, and Only Docker 🙂 🐳
 
 # Getting Started
 
 ```bash
 # Running Tests (All Challenges)
-go test ./...
+docker compose run --rm this go test ./...
 
 # Running Linter (All Folders)
-revive ./...
+docker compose run --rm this golangci-lint run
 ```
 
 # Future Improvements
 
-* [ ] Add Dockerfile and Compose to facilitate testing
+* [x] Add Dockerfile and Compose to facilitate testing ✅

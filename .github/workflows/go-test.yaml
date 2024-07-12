@@ -7,17 +7,12 @@ on:
 jobs:
   Test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        go-version: [ '1.21.x' ]
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-      - name: Setup Go ${{ matrix.go-version }}
-        uses: actions/setup-go@v4
-        with:
-          go-version: ${{ matrix.go-version }}
+      - name: Build With Compose
+        run: docker compose build this
 
-      - name: Go Test
-        run: go test ./...
+      - name: Run Lint With Compose
+        run: docker compose run --rm this go test ./...

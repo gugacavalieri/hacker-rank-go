@@ -1,0 +1,8 @@
+services: 
+  this:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # entrypoint: [""]
+    volumes:
+      - .:/app
