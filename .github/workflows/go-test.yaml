@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4\
+
+      - name: Build With Compose
+        run: docker compose build this
 
       - name: Run Tests With Compose
-        run: docker compose run --rm --build this go test ./...
+        run: docker compose run --rm this go test ./...
