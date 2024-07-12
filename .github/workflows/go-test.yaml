@@ -8,11 +8,8 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
       - name: Run Tests With Compose
-        uses: cloudposse/github-action-docker-compose-test-run@main
-        with:
-          file: ./docker-compose.yml
-          service: this
-          command: go test ./...
+        run: docker compose run --rm --build this go test ./...
