@@ -14,5 +14,5 @@ jobs:
       - name: Build With Compose
         run: docker compose build this
 
-      - name: Run Tests With Compose
+      - name: Run Lint With Compose
         run: docker compose run --rm this golangci-lint run
