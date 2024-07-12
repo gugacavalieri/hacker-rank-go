@@ -11,5 +11,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Run Revive Action by pulling pre-built image
-        uses: docker://morphy/revive-action:v2
+      - name: Run Lint With Compose
+        uses: cloudposse/github-action-docker-compose-test-run@main
+        with:
+          file: ./docker-compose.yml
+          service: this
+          command: golangci-lint run
