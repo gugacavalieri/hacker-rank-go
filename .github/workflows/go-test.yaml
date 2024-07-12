@@ -14,5 +14,5 @@ jobs:
       - name: Build With Compose
         run: docker compose build this
 
-      - name: Run Lint With Compose
+      - name: Run Tests With Compose
         run: docker compose run --rm this go test ./...
