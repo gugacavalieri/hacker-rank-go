@@ -9,7 +9,11 @@ package main
  *  1. STRING_ARRAY strings
  *  2. STRING_ARRAY queries
  *
- * Time complexity: O(mn)
+ * Time complexity:
+ *    Worst Case (Unique Queries and Strings): O(mn)
+ *    Best Case (Single Query repeated multiple times): O(1) -> Only need to calculate query once
+ * We add a HashMap to this function to cache the count for each query. If a query repeats we don't need
+ * to calculate it twice
  */
 func matchingStrings(strings []string, queries []string) []int32 {
 	queryCounter := []int32{}
