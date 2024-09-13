@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build With Compose
-        run: docker compose build this
+        run: make build
 
       - name: Run Lint With Compose
-        run: docker compose run --rm this golangci-lint run
+        run: make lint
