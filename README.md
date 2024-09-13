@@ -13,11 +13,17 @@
 # Getting Started
 
 ```bash
+# Build Docker Image
+make build
+
 # Running Tests (All Challenges)
-docker compose run --rm this go test ./...
+make test
 
 # Running Linter (All Folders)
-docker compose run --rm this golangci-lint run
+make lint
+
+# Get a Go Shell
+make shell
 ```
 
 # Future Improvements
