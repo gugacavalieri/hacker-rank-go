@@ -1,7 +1,7 @@
 FROM golang:1.22.7-alpine3.20
 
 # image deps
-RUN apk add --no-cache curl
+RUN apk add --no-cache curl git
 
 # install a nice go linter
 ENV LINT_VERSION v1.59.1
